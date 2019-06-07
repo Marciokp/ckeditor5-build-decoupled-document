@@ -4,14 +4,8 @@
  */
 
 // The editor creator to use.
-import DecoupledEditorBase from '@ckeditor/ckeditor5-editor-decoupled/src/decouplededitor';
-
-import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials';
-import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
-import FontSize from '@ckeditor/ckeditor5-font/src/fontsize';
-import FontFamily from '@ckeditor/ckeditor5-font/src/fontfamily';
-import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
 import UploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter';
+import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
@@ -20,7 +14,13 @@ import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
 import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
 import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
+import DecoupledEditorBase from '@ckeditor/ckeditor5-editor-decoupled/src/decouplededitor';
+import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials';
+import FontColor from '@ckeditor/ckeditor5-font/src/fontcolor';
+import FontFamily from '@ckeditor/ckeditor5-font/src/fontfamily';
+import FontSize from '@ckeditor/ckeditor5-font/src/fontsize';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading';
+import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
 import Image from '@ckeditor/ckeditor5-image/src/image';
 import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption';
 import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
@@ -28,11 +28,11 @@ import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
 import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload';
 import Link from '@ckeditor/ckeditor5-link/src/link';
 import List from '@ckeditor/ckeditor5-list/src/list';
-import MediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembed';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
+
 
 export default class DecoupledEditor extends DecoupledEditorBase {}
 
@@ -42,6 +42,7 @@ DecoupledEditor.builtinPlugins = [
 	Alignment,
 	FontSize,
 	FontFamily,
+	FontColor,
 	Highlight,
 	UploadAdapter,
 	Autoformat,
@@ -60,7 +61,6 @@ DecoupledEditor.builtinPlugins = [
 	ImageUpload,
 	Link,
 	List,
-	MediaEmbed,
 	Paragraph,
 	PasteFromOffice,
 	Table,
@@ -75,6 +75,7 @@ DecoupledEditor.defaultConfig = {
 			'|',
 			'fontsize',
 			'fontfamily',
+			'fontcolor',
 			'|',
 			'bold',
 			'italic',
@@ -91,7 +92,6 @@ DecoupledEditor.defaultConfig = {
 			'blockquote',
 			'imageUpload',
 			'insertTable',
-			'mediaEmbed',
 			'|',
 			'undo',
 			'redo'
