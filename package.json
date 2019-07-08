@@ -65,11 +65,11 @@
   },
   "author": "Marcio Kabke Pinheiro",
   "license": "GPL-2.0-or-later",
-  "homepage": "https://ckeditor.com/ckeditor-5",
-  "bugs": "https://github.com/ckeditor/ckeditor5-build-decoupled-document/issues",
+  "homepage": "https://github.com/Marciokp/ckeditor5-build-decoupled-document",
+  "bugs": "https://github.com/Marciokp/ckeditor5-build-decoupled-document/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ckeditor/ckeditor5-build-decoupled-document.git"
+    "url": "https://github.com/Marciokp/ckeditor5-build-decoupled-document.git"
   },
   "scripts": {
     "build": "webpack --mode production",
