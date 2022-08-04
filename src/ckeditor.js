@@ -60,6 +60,7 @@ DecoupledEditor.builtinPlugins = [
 	ImageToolbar,
 	ImageUpload,
 	Link,
+	Autolink,
 	List,
 	MediaEmbed,
 	Paragraph,
